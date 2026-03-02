@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Basketball_club_application">
         <activity
-            android:name=".MainActivity"
+            android:name=".PlayerList"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

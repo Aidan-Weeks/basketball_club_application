@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">basketball_club_application</string>
+    <string name="button_addPlayer">Add Player</string>
+    #  <string name="hint_playerTitle">Player Title</string>
+
+
+
 </resources>
