@@ -15,7 +15,7 @@
     <style name="Theme.Placemark" parent="Base.Theme.Placemark" />
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#4750A1</color>
-    <color name="colorPrimaryDark">#1DC4C4</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
+    <color name="colorPrimaryDark">#FF000000</color>
     <color name="colorAccent">#026E8E</color>
 </resources>

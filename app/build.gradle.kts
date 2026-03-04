@@ -9,6 +9,10 @@ android {
             minorApiLevel = 1
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
+
 
     defaultConfig {
         applicationId = "ie.setu.basketball_club_application"
