@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">basketball_club_application</string>
+    <string name="app_name">Basketball Club APP</string>
     <string name="button_addPlayer">Add Player</string>
-    #  <string name="hint_playerTitle">Player Title</string>
-
-
+    <string name="hint_playerTitle">Player Title</string>
+    <string name="hint_playerDescription">Position </string>
+    <string name="menu_addPlayer">Add</string>
+    <string name="menu_cancelPlayer">Cancel</string>
 
 </resources>
