@@ -60,7 +60,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_margin="8dp"
-                    android:hint="@string/hint_playerDescription"
+                    android:hint="@string/hint_playerPosition"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/team"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="8dp"
+                    android:hint="@string/hint_playerTeam"
                     android:inputType="text"
                     android:maxLength="25"
                     android:maxLines="1"

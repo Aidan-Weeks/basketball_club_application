@@ -2,7 +2,8 @@
     <string name="app_name">Basketball Club APP</string>
     <string name="button_addPlayer">Add Player</string>
     <string name="hint_playerTitle">Player Title</string>
-    <string name="hint_playerDescription">Position </string>
+    <string name="hint_playerPosition">Position </string>
+    <string name="hint_playerTeam">Team </string>
     <string name="menu_addPlayer">Add</string>
     <string name="menu_cancelPlayer">Cancel</string>
 

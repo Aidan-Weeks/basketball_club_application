@@ -26,6 +26,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/playerTitle"
             tools:text="A Description" />
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            tools:text="Team" />
+
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

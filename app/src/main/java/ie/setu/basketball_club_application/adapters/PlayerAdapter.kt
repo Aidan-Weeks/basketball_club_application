@@ -30,6 +30,8 @@ class playerAdapter(private var players: List<PlayerModel>) :
         fun bind(player: PlayerModel) {
             binding.playerTitle.text = player.title
             binding.description.text = player.description
+            binding.team.text = player.team
+
         }
     }
 }
