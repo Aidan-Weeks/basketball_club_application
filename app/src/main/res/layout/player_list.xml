@@ -81,17 +81,17 @@
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp" />
 
-                <Button
+
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnAdd"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
-                    android:padding="8dp"
-                    android:stateListAnimator="@null"
-                    android:text="@string/button_addPlayer"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="20sp" />
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/ic_add"
+                    android:contentDescription="@string/button_addPlayer"
+                    android:layout_margin="16dp" />
+
             </LinearLayout>
         </ScrollView>
 
