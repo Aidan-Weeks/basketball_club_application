@@ -5,5 +5,5 @@
     <item
         android:id="@+id/item_cancel"
         android:title="@string/menu_cancelPlayer"
-        app:showAsAction="always"/>
+        app:showAsAction="never" />
 </menu>

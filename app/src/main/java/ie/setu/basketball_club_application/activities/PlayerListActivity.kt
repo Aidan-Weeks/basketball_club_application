@@ -31,6 +31,11 @@ class PlayerListActivity : AppCompatActivity() {
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
         binding.recyclerView.adapter = playerAdapter(app.players)
+
+        binding.btnAdd.setOnClickListener {
+            val launcherIntent = Intent(this, PlayerList::class.java)
+            getResult.launch(launcherIntent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -39,12 +44,6 @@ class PlayerListActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.item_add -> {
-                val launcherIntent = Intent(this, PlayerList::class.java)
-                getResult.launch(launcherIntent)
-            }
-        }
         return super.onOptionsItemSelected(item)
     }
 
