@@ -6,4 +6,8 @@
         android:id="@+id/item_cancel"
         android:title="@string/menu_cancelPlayer"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/item_delete"
+        android:title="@string/menu_deletePlayer"
+        app:showAsAction="never" />
 </menu>

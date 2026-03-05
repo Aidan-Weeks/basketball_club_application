@@ -7,14 +7,15 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
-import ie.setu.basketball_club_application.PlayerList
 import ie.setu.basketball_club_application.R
 import ie.setu.basketball_club_application.adapters.playerAdapter
+import ie.setu.basketball_club_application.adapters.playerListener
 import ie.setu.basketball_club_application.databinding.ActivityPlayerListBinding
 import ie.setu.basketball_club_application.main.MainApp
+import ie.setu.basketball_club_application.models.PlayerModel
 
 
-class PlayerListActivity : AppCompatActivity() {
+class PlayerListActivity : AppCompatActivity(), playerListener {
 
     lateinit var app: MainApp
     private lateinit var binding: ActivityPlayerListBinding
@@ -30,7 +31,7 @@ class PlayerListActivity : AppCompatActivity() {
 
         val layoutManager = LinearLayoutManager(this)
         binding.recyclerView.layoutManager = layoutManager
-        binding.recyclerView.adapter = playerAdapter(app.players)
+        binding.recyclerView.adapter = playerAdapter(app.players.findAll(),this)
 
         binding.btnAdd.setOnClickListener {
             val launcherIntent = Intent(this, PlayerList::class.java)
@@ -53,7 +54,22 @@ class PlayerListActivity : AppCompatActivity() {
         ) {
             if (it.resultCode == RESULT_OK) {
                 (binding.recyclerView.adapter)?.
-                notifyItemRangeChanged(0,app.players.size)
+                notifyItemRangeChanged(0,app.players.findAll().size)
+            }
+        }
+    override fun onPlayerClick(player: PlayerModel) {
+        val launcherIntent = Intent(this, PlayerList::class.java)
+        launcherIntent.putExtra("player_edit", player)
+        getClickResult.launch(launcherIntent)
+    }
+
+    private val getClickResult =
+        registerForActivityResult(
+            ActivityResultContracts.StartActivityForResult()
+        ) {
+            if (it.resultCode == RESULT_OK) {
+                (binding.recyclerView.adapter)?.
+                notifyItemRangeChanged(0,app.players.findAll().size)
             }
         }
 }

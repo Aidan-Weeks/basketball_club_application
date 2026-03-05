@@ -6,5 +6,7 @@
     <string name="hint_playerTeam">Team </string>
     <string name="menu_addPlayer">Add</string>
     <string name="menu_cancelPlayer">Cancel</string>
+    <string name="save_Player">Save Player</string>
+    <string name="menu_deletePlayer">Delete</string>
 
 </resources>

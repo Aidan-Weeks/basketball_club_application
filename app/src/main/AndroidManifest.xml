@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Basketball_club_application">
+
         <activity
             android:name=".activities.PlayerListActivity"
             android:exported="true">
@@ -22,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".PlayerList"
+            android:name=".activities.PlayerList"
             android:exported="true">
         </activity>
     </application>

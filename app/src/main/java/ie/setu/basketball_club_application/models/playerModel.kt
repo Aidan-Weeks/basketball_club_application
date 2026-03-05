@@ -1,5 +1,10 @@
 package ie.setu.basketball_club_application.models
 
-data class PlayerModel(var title: String = "",
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
+data class PlayerModel(var id: Long = 0,
+                       var title: String = "",
                        var description: String = "",
-                       var team: String = "")
+                       var team: String = ""): Parcelable

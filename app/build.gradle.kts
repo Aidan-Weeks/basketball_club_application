@@ -1,14 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.parcelize)
 }
 
 android {
     namespace = "ie.setu.basketball_club_application"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 34
+
     buildFeatures {
         viewBinding = true
     }
@@ -17,7 +15,7 @@ android {
     defaultConfig {
         applicationId = "ie.setu.basketball_club_application"
         minSdk = 30
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
