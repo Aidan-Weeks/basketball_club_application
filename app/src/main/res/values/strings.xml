@@ -8,5 +8,8 @@
     <string name="menu_cancelPlayer">Cancel</string>
     <string name="save_Player">Save Player</string>
     <string name="menu_deletePlayer">Delete</string>
+    <string name="button_addImage"> Add Image </string>
+
+
 
 </resources>

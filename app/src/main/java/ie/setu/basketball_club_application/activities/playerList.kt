@@ -56,6 +56,9 @@ class PlayerList : AppCompatActivity() {
                 Snackbar.make(it, "Please Enter a Player Name", Snackbar.LENGTH_LONG).show()
             }
         }
+        binding.chooseImage.setOnClickListener {
+            i("Select image")
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
