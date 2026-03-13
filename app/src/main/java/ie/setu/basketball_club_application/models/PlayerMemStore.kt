@@ -28,6 +28,7 @@ class PlayerMemStore : PlayerStore {
             foundPlayer.title = player.title
             foundPlayer.description = player.description
             foundPlayer.team = player.team
+            foundPlayer.image = player.image
             logAll()
         }
     }
