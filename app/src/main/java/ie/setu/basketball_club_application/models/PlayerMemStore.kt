@@ -23,7 +23,7 @@ class PlayerMemStore : PlayerStore {
     }
 
     override fun update(player: PlayerModel) {
-        val foundPlayer: PlayerModel? = players.find { p -> p.id == player.id }
+        var foundPlayer: PlayerModel? = players.find { p -> p.id == player.id }
         if (foundPlayer != null) {
             foundPlayer.title = player.title
             foundPlayer.description = player.description

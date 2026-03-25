@@ -1,8 +1,9 @@
-package ie.setu.basketball_club_application.adapters
+    package ie.setu.basketball_club_application.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import ie.setu.basketball_club_application.databinding.PlayerCardBinding
 import ie.setu.basketball_club_application.models.PlayerModel
 
@@ -35,6 +36,7 @@ class playerAdapter(private var players: List<PlayerModel>,
             binding.playerTitle.text = player.title
             binding.description.text = player.description
             binding.team.text = player.team
+            Picasso.get().load(player.image).resize(200,200).into(binding.imageIcon)
             binding.root.setOnClickListener { listener.onPlayerClick(player) }
 
         }

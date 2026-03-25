@@ -54,6 +54,9 @@ class PlayerList : AppCompatActivity() {
             Picasso.get()
                 .load(player.image)
                 .into(binding.playerImage)
+            if (player.image != Uri.EMPTY) {
+                binding.chooseImage.setText(R.string.change_player_image)
+            }
         }
 
         binding.btnAdd.setOnClickListener {
